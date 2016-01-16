@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Advinha qual número estou pensando!?</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Jogo de adivinhação</h1>
+	<script type="text/javascript">
+		function pulaLinha () {
+			document.write("<br>");
+		}
+		function mostra (msg) {
+			document.write(msg);
+			pulaLinha();
+		}
+		// A função Math.random() escolhe aleatoriamente um número ente 0 e 1
+		// Math.round(Math.ramdom() * 100)
+		var numeroEscolhido = Math.round(Math.random() * 100);
+		//mostra("Número escolhido: " + numeroEscolhido);
+		var chute = parseInt(prompt("Chute um número"));
+		if (chute == numeroEscolhido) {
+			mostra("Maravilha!!! Você acertou de primeira. O número chutado foi: " + chute + " e o número escolhido foi: " + numeroEscolhido);
+		} else {
+			mostra("Desculpe, mas não foi dessa vez!")
+		};
+		
+	</script>
+
+</body>
+</html>

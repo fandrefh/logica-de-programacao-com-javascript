@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Trabalhando com números</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Como trabalhar com números no JavaScript</h1>
+<script>
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	document.write("Minha idade é: " + "34");
+	pulaLinha();
+	document.write("<h2>Sinais Aritméticos</h2>");
+	document.write("A soma entre 15 + 15 é: " + (15 + 15)) + pulaLinha();
+	document.write("A subtração entre 15 - 10 é: " + (15 - 10)) + pulaLinha();
+	document.write("A multiplicação entre 5 * 5 é: " + (5 * 5)) + pulaLinha();
+	document.write("A divisão entre 8 / 2 é: " + (8 / 2));
+	// 1 - Mostre o seu ano de nascimento realizando a subtração
+	//Exemplo: Eu nasci em: 1981
+	document.write("<h2>Exercícios com números</h2>");
+	var anoAtual = 2016;
+	var idadeAlexson = 27;
+	var idadeFranko = 31;
+	var idadeWillamark = 47;
+	document.write("Nascimento Alexson: " + (anoAtual - idadeAlexson)) + pulaLinha();
+	document.write("Nascimento Franko: " + (anoAtual - idadeFranko)) + pulaLinha();
+	document.write("Nascimento Willamark: " + (anoAtual - idadeWillamark)) + pulaLinha();
+	//Refatorando o cálculo da média
+	var nota1 = 10;
+	var nota2 = 10;
+	var nota3 = 10;
+	var nota4 = 10;
+	var somaTotalNotas = nota1 + nota2 + nota3 + nota4;
+	document.write("A média entre as 4 notas é: " + somaTotalNotas / 4);
+	// 2 - Calcule a média entre 4 notas
+	//Exemplo: A média das notas é: 7
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Vida</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Cálculo do tempo de vida e batida do coração</h1>
+<script>
+	idade = prompt("Qual a sua idade?");
+	function pulaLinha () {
+		document.write("<br>");
+	}
+	function mostra (msg) {
+		document.write(msg);
+		pulaLinha();
+	}
+	function vida (idade) {
+		var diasDeVida = idade * 365;
+		mostra("Você já viveu: " + diasDeVida);
+		mostra("Seu coração já bateu: " + diasDeVida * 24 * 60 * 80);
+	}
+	vida(idade);
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Exercícios Condicionais</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Exercício de condicionais</h1>
+	<script type="text/javascript">
+		function pulaLinha () {
+			document.write("<br>");
+		}
+		function mostra (msg) {
+			document.write(msg);
+			pulaLinha();
+		}
+		// Se for decimal use o parseFloat()
+		var n1 = parseInt(prompt("Digite o primeiro número"));
+		var n2 = parseInt(prompt("Digite o segundo número"));
+		if (n1 == n2) {
+			mostra(n1 + " é igual a " + n2);
+		} else {
+			mostra(n1 + " não é igual a " + n2);
+		};
+		if (n1 === n2) {
+			mostra(n1 + " é do mesmo tipo de " + n2);
+		} else {
+			mostra(n1 + " não é do mesmo tipo de " + n2);
+		};
+		if (n1 > n2) {
+			mostra(n1 + " é maior do que " + n2);
+		} else {
+			mostra(n1 + " não é maior do que " + n2);
+		};
+		if (n1 >= n2) {
+			mostra(n1 + " é maior ou igual a " + n2);
+		} else {
+			mostra(n1 + " é menor ou diferente de " + n2);
+		};
+		if (n1 < n2) {
+			mostra(n1 + " é menor do que " + n2);
+		} else {
+			mostra(n1 + " não é menor do que " + n2);
+		};
+		if (n1 <= n2) {
+			mostra(n1 + " é menor ou igual a " + n2);
+		} else {
+			mostra(n1 + " é maior do que " + n2);
+		};
+	</script>
+</body>
+</html>

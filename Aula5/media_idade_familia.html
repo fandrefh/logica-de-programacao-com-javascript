@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Média idade família</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Média de idade da família</h1>
+<script type="text/javascript">
+	function mostra(msg) {
+		document.write(msg + "<br>");
+	}
+	var soma_idade = 0;
+	var media_idade = 0;
+	var qtd_pessoas_familia = parseInt(prompt("Quantas pessoas tem na sua família?"));
+	for (var i = 1; i <= qtd_pessoas_familia; i++) {
+		var idade = parseInt(prompt("Idade da " + i + " pessoa?"));
+		soma_idade += idade;
+		media_idade = soma_idade / qtd_pessoas_familia;
+	};
+	mostra("A média de idade da sua família é: " + Math.round(media_idade) + " anos.");
+</script>
+</body>
+</html>

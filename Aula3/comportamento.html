@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Comportamento</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+	function pulaLinha () {
+		document.write("<br>");
+	}
+	function mostra (msg) {
+		document.write(msg);
+		pulaLinha();
+	}
+	var vitorias = parseInt(prompt("Quantos jogos seu time ganhou?"));
+	var empates = parseInt(prompt("Quantos jogos seu time empatou?"));
+	var pontos = (vitorias * 3) + empates;
+	mostra("Meu time tem " + pontos + " pontos!");
+	if (pontos > 45) {
+		mostra("Parabéns, escapou da segundona!!");
+	} else if (pontos > 20 && pontos <= 45) {
+		mostra("Tá na segundona!");
+	} else {
+		mostra("Tá fora do campeonato!");
+	}
+</script>
+</body>
+</html>
