@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Integrando JavaScript e HTML</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+	function mostra_texto () {
+		var textoDoInput = document.getElementById('texto');
+		alert("Valor do campo 'texto': " + textoDoInput.value);
+	}
+</script>
+<form>
+	<input type="text" id="texto">
+	<input type="submit" onclick="mostra_texto()" value="Clique para enviar">
+</form>
+
+</body>
+</html>

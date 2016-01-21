@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Integrando JavaScript e HTML</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+	function calcula_media () {
+		var nota1 = document.getElementById('nota1');
+		var nota2 = document.getElementById('nota2');
+		var nota3 = document.getElementById('nota3');
+		var nota4 = document.getElementById('nota4');
+		var nota1Convertida = parseInt(nota1.value);
+		var nota2Convertida = parseInt(nota2.value);
+		var nota3Convertida = parseInt(nota3.value);
+		var nota4Convertida = parseInt(nota4.value);
+		var media_notas = (nota1Convertida + nota2Convertida + nota3Convertida + nota4Convertida) / 4;
+		alert("Sua média é: " + media_notas);
+	}
+</script>
+<form>
+	<h1>Cálculo da média</h1>
+	Primeira nota: <input type="text" id="nota1"><br>
+	Segunda nota: <input type="text" id="nota2"><br>
+	Terceira nota: <input type="text" id="nota3"><br>
+	Quarta nota: <input type="text" id="nota4"><br>
+	<input type="submit" onclick="calcula_media()" value="Clique para enviar">
+</form>
+
+</body>
+</html>

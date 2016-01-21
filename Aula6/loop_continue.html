@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Loop Break</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Uso do comando continue com o loop while</h1>
+<script type="text/javascript">
+	function mostra(msg) {
+		document.write(msg + "<br>");
+	};
+	var controle = 1;
+	while(controle <= 100) {
+		mostra("Contando... " + controle);
+		controle++;
+		if (controle == 50) {
+			mostra("A contagem chegou em 50!");
+			continue;
+		};
+	}
+</script>
+<h1>Uso do comando continue com o loop for</h1>
+<script type="text/javascript">
+	function mostra(msg) {
+		document.write(msg + "<br>");
+	};
+	for (var i = 1; i <= 100; i++) {
+		mostra("Contando com o for... " + i);
+		if (i == 50) {
+			mostra("A contagem chegou em 50!");
+			continue;
+		};
+	};
+</script>
+</body>
+</html>
